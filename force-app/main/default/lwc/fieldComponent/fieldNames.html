@@ -1,0 +1,12 @@
+<template >
+  
+    <p>in Child HTML</p>
+  <!--  <lightning-checkbox-group name="FieldList" label="Select Field" onchange={HandleRecord} options={fieldsList1} >fields</lightning-checkbox-group>  -->
+   <!-- <lightning-combobox name="ObjectList" label="Select Object" onchange={HandleRecord}  options={fieldsList} value={value} >Object</lightning-combobox> -->
+  
+  <lightning-checkbox-group name="fields"
+  label="Select Fields"
+  options={fieldsList}
+  value={selectedFields}
+  onchange={HandleRecord}></lightning-checkbox-group>
+</template>
