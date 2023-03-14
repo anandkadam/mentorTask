@@ -1,0 +1,8 @@
+<template>
+    <h2>Records :</h2>
+    <div class="slds-text-align_right">
+        <lightning-datatable key-field="id" data={recordList} columns={column} onrowaction={handleRowAction}
+            style="height: 200px; overflow: auto;">
+        </lightning-datatable>
+    </div>
+</template>

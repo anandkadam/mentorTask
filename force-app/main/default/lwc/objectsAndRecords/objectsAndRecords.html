@@ -1,0 +1,17 @@
+<template>
+        <div class="slds-grid">
+            <span class="slds-col slds-size_3-of-12">Select Object :</span>
+            <lightning-combobox class="slds-col slds-size_6-of-12" name="ObjectList" onchange={handleFields}
+                value={selectedObject} options={objectList}
+                placeholder="List of All Objects">Object</lightning-combobox>
+            <lightning-button class="slds-col slds-size_3-of-12" variant="brand-outline" label="Create New Record"
+                onclick={createRecord}></lightning-button>
+        </div>
+    <lightning-card>
+        <div class="slds-grid slds-wrap">
+            <c-field-Names class="slds-col slds-size_3-of-12" onchangeinfields={handlecheckbox}
+                value={SelectedFieldList}></c-field-Names>
+            <c-records class="slds-col slds-size_9-of-12" style="height: 200px; overflow: auto;"></c-records>
+        </div>
+    </lightning-card>
+</template>
